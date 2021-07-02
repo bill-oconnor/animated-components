@@ -1,0 +1,41 @@
+.Link {
+  text-decoration: none;
+  position: relative;
+  color: #497ce9;
+
+  &::after {
+    /* Try em instead of px */
+    content: '';
+    border-top: 2px solid;
+    border-radius: 3px;
+    border-color: #497ce9;
+
+    position: absolute;
+    right: 100%; // this is before hover animation
+    left: 0;
+    bottom: 0.1px;
+
+    transition: right 0.4s ease-in-out;
+  }
+
+  &:hover {
+    color: #2764e7;
+    &::after {
+      right: 0;
+      border-color: #2764e7;
+    }
+  }
+
+  &:focus {
+  }
+
+  &:visited {
+  }
+
+  &.Link--gradient:hover {
+    background: linear-gradient(to right, #2764e7, #e449e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

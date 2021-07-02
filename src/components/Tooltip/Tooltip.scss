@@ -1,0 +1,17 @@
+.Tooltip {
+  position: relative;
+
+  &:hover {
+    & .Tooltip__content {
+      visibility: visible;
+    }
+  }
+
+  // not hovered
+  & .Tooltip__content {
+    visibility: hidden;
+  }
+
+  & .Tooltip__hoverable {
+  }
+}

@@ -1,0 +1,10 @@
+.Element {
+  padding: 20px 40px;
+  box-shadow: 1px 1px 3px 1px rgba($color: #aaa, $alpha: 0.5);
+
+  transition: all 1s ease-out;
+
+  &:hover {
+    box-shadow: 1px 1px 5px 3px rgba($color: #aaa, $alpha: 0.5);
+  }
+}
